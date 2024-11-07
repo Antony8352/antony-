@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    padding: 10px;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para as abas */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.tablinks {
+    padding: 55px 65px;
+    background-color: #790202;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.tablinks:hover {
+    background-color: #25be2c;
+}
+
+.tabcontent {
+    display: none;
+    padding: 50px;
+}
+
+.tabcontent h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Home */
+.game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 0;
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.game h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #770000;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 20px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #050883;
+}
+
+/* Carrinho */
+#cart-items {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 5px;
+}
+
+#cart-items li {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+
+#total-price {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.proceed-checkout {
+    background-color: #000000;
+    padding: 12px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Checkout */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 6px rgb(0, 0, 0);
+}
+
+form label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 5px solid #000000;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+form button {
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #48ff00;
+}

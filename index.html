@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Jogos Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navegação entre abas -->
+        <div class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'home')">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'jogo')">Jogos</button>
+            <button class="tablinks" onclick="openTab(event, 'cart')">Carrinho</button>
+            <button class="tablinks" onclick="openTab(event, 'checkout')">Checkout</button>
+        </div>
+
+        <!-- Aba Home -->
+        <div id="home" class="tabcontent">
+            <h1>Loja de Jogos Online</h1>
+            <div class="game">
+                <h3>Jogo A - R$ 99,90</h3>
+                <button class="add-to-cart" data-title="Jogo A" data-price="99.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="game">
+                <h3>Jogo B - R$ 129,90</h3>
+                <button class="add-to-cart" data-title="Jogo B" data-price="129.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="game">
+                <h3>Jogo C - R$ 79,90</h3>
+                <button class="add-to-cart" data-title="Jogo C" data-price="79.90">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <!-- Aba Jogos -->
+        <div id="jogo" class="tabcontent">
+            <h1>Loja de Jogos Online</h1>
+            <div class="game">
+                <h3>Jogo A - R$ 99,90</h3>
+                <button class="add-to-cart" data-title="Jogo A" data-price="99.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="game">
+                <h3>Jogo B - R$ 129,90</h3>
+                <button class="add-to-cart" data-title="Jogo B" data-price="129.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="game">
+                <h3>Jogo C - R$ 79,90</h3>
+                <button class="add-to-cart" data-title="Jogo C" data-price="79.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="game">
+                <h3>Jogo A - R$ 99,90</h3>
+                <button class="add-to-cart" data-title="Jogo A" data-price="99.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="game">
+                <h3>Jogo B - R$ 129,90</h3>
+                <button class="add-to-cart" data-title="Jogo B" data-price="129.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="game">
+                <h3>Jogo C - R$ 79,90</h3>
+                <button class="add-to-cart" data-title="Jogo C" data-price="79.90">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <!-- Aba Carrinho -->
+        <div id="cart" class="tabcontent">
+            <h1>Carrinho de Compras</h1>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: R$ 0.00</p>
+            <button class="proceed-checkout" onclick="openTab(event, 'checkout')">Finalizar Compra</button>
+        </div>
+
+        <!-- Aba Checkout -->
+        <div id="checkout" class="tabcontent">
+            <h1>Finalizar Compra</h1>
+            <form id="payment-form">
+                <label for="card-number">Número do Cartão:</label>
+                <input type="text" id="card-number" placeholder="0000 0000 0000 0000" required>
+
+                <label for="card-name">Nome no Cartão:</label>
+                <input type="text" id="card-name" placeholder="Seu nome" required>
+
+                <button type="submit">Pagar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
